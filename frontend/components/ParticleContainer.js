@@ -46,17 +46,17 @@ class ParticleContainer extends React.Component {
               }
             },
             size: {
-              value: 3,
+              value: 15,
               random: true,
               anim: {
                 enable: false,
                 speed: 40,
-                size_min: 0.1,
+                size_min: 5,
                 sync: false
               }
             },
             line_linked: {
-              enable: true,
+              enable: false,
               distance: 150,
               color: "#e2d018",
               opacity: 0.4,
@@ -64,14 +64,14 @@ class ParticleContainer extends React.Component {
             },
             move: {
               enable: true,
-              speed: 5,
+              speed: 0.5,
               direction: "none",
               random: false,
               straight: false,
               out_mode: "out",
-              bounce: false,
+              bounce: true,
               attract: {
-                enable: false,
+                enable: true,
                 rotateX: 600,
                 rotateY: 1200
               }
@@ -82,7 +82,7 @@ class ParticleContainer extends React.Component {
             events: {
               onhover: {
                 enable: true,
-                mode: "grab"
+                mode: "repulse"
               },
               onclick: {
                 enable: true,
@@ -105,7 +105,7 @@ class ParticleContainer extends React.Component {
                 speed: 3
               },
               repulse: {
-                distance: 200,
+                distance: 40,
                 duration: 0.4
               },
               push: {
@@ -119,7 +119,7 @@ class ParticleContainer extends React.Component {
           retina_detect: true
         }}
         style={{
-          backgroundColor: "#252527",
+          backgroundColor: "#FFF",
           width: "100%",
           height: "100%"
         }}
