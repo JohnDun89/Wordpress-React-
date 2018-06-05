@@ -1,6 +1,7 @@
 import React from "react";
 import { Config } from "../config.js";
 import ParticleContainer from "./ParticleContainer";
+import Particles from "react-particles-js";
 
 const PageWrapper = Comp =>
   class extends React.Component {
@@ -16,12 +17,7 @@ const PageWrapper = Comp =>
     }
 
     render() {
-      return (
-        <div>
-          <ParticleContainer />
-          <Comp {...this.props} />
-        </div>
-      );
+      return <Comp {...this.props} />;
     }
   };
 
