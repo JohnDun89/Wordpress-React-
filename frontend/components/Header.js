@@ -5,7 +5,6 @@ import Menu from "./Menu.js";
 import { Config } from "../config.js";
 import stylesheet from "../src/styles/style.scss";
 import ParticleContainer from "./ParticleContainer.js";
-import Particles from "react-particles-js";
 
 class Header extends Component {
   constructor() {
@@ -13,7 +12,11 @@ class Header extends Component {
   }
 
   render() {
-    return <ParticleContainer />;
+    return (
+      <div>
+        <ParticleContainer />
+      </div>
+    );
   }
 }
 

@@ -1,7 +1,5 @@
 import React from "react";
 import { Config } from "../config.js";
-import ParticleContainer from "./ParticleContainer";
-import Particles from "react-particles-js";
 
 const PageWrapper = Comp =>
   class extends React.Component {

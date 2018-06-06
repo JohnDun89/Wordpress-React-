@@ -8,7 +8,6 @@ const layoutStyle = {
 
 const Layout = props => (
   <div style={layoutStyle}>
-    <h1>Hiya!</h1>
     <Header />
     {props.children}
     <Footer />
